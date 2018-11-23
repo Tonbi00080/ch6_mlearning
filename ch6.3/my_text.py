@@ -29,7 +29,7 @@ model.load_weights('./text/genre-model.hdf5')
 # テキスト判定
 def check_genre(text):
     # ラベルの定義
-    LABELS = ["家電","IT","恋愛","ニュース"]
+    LABELS = ["kaden-channel","IT","peachy","topic-news"]
     # TF-IDFのベクトルに変換
     data = tfidf.calc_text(text)
     # MLPで予測
